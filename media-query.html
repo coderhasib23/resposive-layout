@@ -6,11 +6,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Media Query</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .food{
+            border: 3px solid burlywood;
+            border-radius: 20px;
+            padding: 10px;
+        }
+        .food img{
+            width: 75%;
+        }
+        /* Media Query */
+        @media screen and (max-width:576px) {
+            .container{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        @media screen and (min-width:577px) and (max-width:992px) {
+            .container{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
   </head>
   <body>
     <header>
       <h1>8-6 Explore Responsiveness using Media query</h1>
     </header>
+    <main>
+        <!-- .container>.food*12>img[src="images/food.jpg"]>h2{Item-$}+h4{Price -$00}+p>lorem30^button{Order Now} -->
+        <div class="container">
+            <div class="food">
+                <img src="images/food.jpg" alt="">
+                    <h2>Item-1</h2>
+                    <h4>Price -100</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique odio inventore rerum quas debitis! Consectetur voluptates unde quidem, facere quam sequi vel enim sunt quibusdam deleniti doloremque, corrupti harum velit?</p>
+                    <button>Order Now</button>
+                </img>
+            </div>
+            <div class="food">
+                <img src="images/food.jpg" alt="">
+                    <h2>Item-2</h2>
+                    <h4>Price -200</h4>
+                    <p>Aliquam voluptas consequatur veritatis culpa voluptatem consectetur laboriosam, tenetur accusamus quae sint delectus vitae fugit voluptatibus quam nesciunt? Labore eos eaque qui veniam quaerat fugit quam assumenda at, obcaecati doloremque.</p>
+                    <button>Order Now</button>
+                </img>
+            </div>
+            <div class="food">
+                <img src="images/food.jpg" alt="">
+                    <h2>Item-3</h2>
+                    <h4>Price -300</h4>
+                    <p>Earum, voluptas quasi. Qui voluptatibus quisquam temporibus minima. Temporibus, omnis? Autem ipsam obcaecati, aliquam ratione accusantium aliquid explicabo doloremque, pariatur voluptates quasi quidem temporibus similique inventore modi blanditiis molestias laboriosam.</p>
+                    <button>Order Now</button>
+                </img>
+            </div>
+            <div class="food">
+                <img src="images/food.jpg" alt="">
+                    <h2>Item-4</h2>
+                    <h4>Price -400</h4>
+                    <p>Doloribus soluta modi ipsum architecto voluptas dolorum enim, quos commodi placeat obcaecati recusandae necessitatibus aut quaerat et provident vitae minima, nesciunt ipsam dolor quo dolorem aliquam mollitia deleniti. Aut, saepe!</p>
+                    <button>Order Now</button>
+                </img>
+            </div>
+            <div class="food">
+                <img src="images/food.jpg" alt="">
+                    <h2>Item-5</h2>
+                    <h4>Price -500</h4>
+                    <p>Reprehenderit atque nostrum nobis dolore consectetur numquam, ea sed maxime tempore consequatur! Soluta autem laborum ipsum illum cupiditate animi dolor numquam quis. Iste repellat at cupiditate facilis fugit iure porro?</p>
+                    <button>Order Now</button>
+                </img>
+            </div>
+            <div class="food">
+                <img src="images/food.jpg" alt="">
+                    <h2>Item-6</h2>
+                    <h4>Price -600</h4>
+                    <p>Maiores ex unde in aspernatur enim, ullam provident! Mollitia culpa tenetur recusandae ea assumenda provident, ad ab voluptas magnam inventore blanditiis, ex laborum ratione nemo, numquam molestiae illo impedit fugiat!</p>
+                    <button>Order Now</button>
+                </img>
+            </div>
+            <div class="food">
+                <img src="images/food.jpg" alt="">
+                    <h2>Item-7</h2>
+                    <h4>Price -700</h4>
+                    <p>Debitis, facilis molestias! Esse necessitatibus deleniti ipsa expedita? Iste sed corporis aspernatur totam quaerat at non repellendus ut eos delectus impedit sit temporibus aperiam cumque ducimus quia, quidem dignissimos consequatur.</p>
+                    <button>Order Now</button>
+                </img>
+            </div>
+            <div class="food">
+                <img src="images/food.jpg" alt="">
+                    <h2>Item-8</h2>
+                    <h4>Price -800</h4>
+                    <p>Voluptatibus, doloribus nulla! Iure, sunt doloremque maxime id ipsam aperiam deleniti consequatur pariatur incidunt aspernatur, minima sit, facilis blanditiis eius? Non consequatur accusamus veniam aliquam consequuntur porro itaque odio ullam.</p>
+                    <button>Order Now</button>
+                </img>
+            </div>
+            <div class="food">
+                <img src="images/food.jpg" alt="">
+                    <h2>Item-9</h2>
+                    <h4>Price -900</h4>
+                    <p>Distinctio incidunt fuga quae laborum aliquam, fugit quod, impedit quaerat officiis aliquid nobis quasi pariatur doloremque tenetur tempora. Harum, dolores ratione esse laboriosam quis possimus. Quisquam dolore esse ipsa eum!</p>
+                    <button>Order Now</button>
+                </img>
+            </div>
+            <div class="food">
+                <img src="images/food.jpg" alt="">
+                    <h2>Item-10</h2>
+                    <h4>Price -1000</h4>
+                    <p>Magnam repellat adipisci delectus eaque voluptas rem sapiente. Commodi placeat inventore id nesciunt hic. Quo fugiat porro facere maxime quidem nemo cum. A cum ex adipisci eaque tenetur consequatur eveniet?</p>
+                    <button>Order Now</button>
+                </img>
+            </div>
+            <div class="food">
+                <img src="images/food.jpg" alt="">
+                    <h2>Item-11</h2>
+                    <h4>Price -1100</h4>
+                    <p>Ipsam, temporibus necessitatibus. Labore maiores nostrum animi voluptas ipsum doloremque, officia aspernatur ea dolorem minima voluptate atque sint, laboriosam ex culpa accusantium at ipsa illo laborum magnam fugiat consectetur illum.</p>
+                    <button>Order Now</button>
+                </img>
+            </div>
+            <div class="food">
+                <img src="images/food.jpg" alt="">
+                    <h2>Item-12</h2>
+                    <h4>Price -1200</h4>
+                    <p>Accusamus obcaecati nihil, maiores nam quos modi consectetur tenetur similique! Cum esse cupiditate nemo corrupti provident nostrum voluptates, molestias distinctio autem saepe, adipisci, fuga debitis assumenda minima mollitia explicabo laboriosam.</p>
+                    <button>Order Now</button>
+                </img>
+            </div>
+        </div>
+    </main>
+   <!-- Code -->
+   <section class="code">
+    <pre>
+            <code>
+              emmet {
+                   <!-- .container>.food*12>img[src="images/food.jpg"]>h2{Item-$}+h4{Price -$00}+p>lorem30^button{Order Now} -->
+                }
+
+              img {
+                    image width resposive 75 % 
+              }
+
+
+              /* Media Query */
+              @media screen and (max-width:576px) {
+                  .container{
+                      grid-template-columns: repeat(1, 1fr);
+                  }
+              }
+              @media screen and (min-width:577px) and (max-width:992px) {
+                  .container{
+                      grid-template-columns: repeat(2, 1fr);
+                  }
+              }
+
+            </code>
+          </pre>
+  </section> 
     <footer>
       <!-- HTML Button !-->
       <button class="button-64" role="button">
@@ -19,7 +174,7 @@
       <br />
       <!-- HTML Button !-->
       <button class="button-64" role="button">
-        <a href="login.html">Login</a>
+        <a href="responsive-website.html">Resposive Website</a>
       </button>
     </footer>
   </body>

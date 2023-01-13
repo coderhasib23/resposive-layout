@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>8-3 Create Login Form And Flexible Nav Using Flexbox</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e67a4d95a3.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      nav {
+        display: flex;
+        justify-content: space-between;
+      }
+      nav a {
+        text-decoration: none;
+        color: black;
+        margin-right: 10px;
+      }
+      .login-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .login-form {
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 50%;
+        align-items: center;
+        padding: 3%;
+      }
+      .login-form input {
+        padding: 10px 200px 10px 10px;
+        font-size: 1.5em;
+        font-weight: 700;
+      }
+
+      .login-container input[type="submit"] {
+        border: 0;
+        background-color: tomato;
+        padding: 10px 20px;
+        color: white;
+        font-weight: 700;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <header>
+    <nav>
+      <span>
+        <a href="http://">Home</a>
+        <a href="http://">Dashboard</a>
+        <a href="http://">Inventory</a>
+      </span>
+      <span>
+        <a href="http://"><i class="fa-solid fa-user"></i></a>
+        <a href="http://"><i class="fa-solid fa-right-from-bracket"></i></a>
+      </span>
+    </nav>
+  </header>
+  <body>
+    <h1>8-3 Create Login Form And Flexible Nav Using Flexbox</h1>
+    <section class="login-container">
+      <form class="login-form" action="">
+        <h2>Please Login</h2>
+        <label for="email">
+          <input
+            type="email"
+            name=""
+            id="email"
+            placeholder="type your email"
+            required
+          />
+        </label>
+        <label for="password">
+          <input
+            type="password"
+            name=""
+            id="password"
+            placeholder="type your password"
+            required
+          />
+        </label>
+        <label for="submit">
+          <input type="submit" value="submit" />
+        </label>
+      </form>
+    </section>
+    <!-- Code -->
+    <section class="code">
+      <pre>
+              <code>
+               span{
+                   is real work as a parent
+                   your can see the nav (wow)
+                  }
+              </code>
+            </pre>
+    </section>
+  </body>
+  <footer>
+    <!-- HTML Button !-->
+    <button class="button-64" role="button">
+      <a href="flexbox.html">flexbox</a>
+    </button>
+    <br />
+    <!-- HTML Button !-->
+    <button class="button-64" role="button">
+      <a href="grid.html">Grid</a>
+    </button>
+  </footer>
+</html>

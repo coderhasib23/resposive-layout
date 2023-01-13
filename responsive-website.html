@@ -5,6 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      h1 {
+        font-size: 3vw;
+      }
+      .tiger img {
+        width: 100%;
+      }
+      .two-col {
+        display: flex;
+      }
+      .two-col .split {
+        width: 50%;
+      }
+      .split img {
+        width: 100%;
+      }
+      @media screen and (max-width: 576px) {
+        .tiger img {
+          width: 100%;
+        }
+        .two-col {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+        .two-col .split {
+          width: 100%;
+        }
+        .two-col .split img {
+          width: 100%;
+        }
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <section>
+      <h1>This Responsive cause Relative units</h1>
+    </section>
+    <section class="tiger">
+      <h3>Tiger</h3>
+      <img src="images/tiger.jpg" alt="" />
+    </section>
+    <section class="two-col">
+      <div class="split">
+        <img src="images/food.jpg" alt="" />
+      </div>
+      <div class="split">
+        <img src="images/tiger.jpg" alt="" />
+      </div>
+    </section>
+    <!-- Code -->
+    <section class="code">
+        <pre>
+                <code>
+                 Seven thinks for responsive{
+                     Viwport 
+                     CSS Relative Unit 
+                     Responsive Img (fluid image)
+                     Body max-width and margin 0 auto 
+                     Split (two col)
+                     Media Query 
+                     split img control in 100%
+                    }
+                </code>
+              </pre>
+      </section>
+    </body>
+    <footer>
+      <!-- HTML Button !-->
+      <button class="button-64" role="button">
+        <a href="media-query.html">Media Query</a>
+      </button>
+      <br />
+      <!-- HTML Button !-->
+      <button class="button-64" role="button">
+        <a href="grid.html">Multi Col</a>
+      </button>
+    </footer>
+  </html>
+  
+  </body>
 </html>
